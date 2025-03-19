@@ -1,0 +1,1 @@
+This repository contains the commands used for processing samples based on our GT-Seq protocols. This currently includes our North Atlantic right whale (*Eubalaena glacialis*) and St. Lawrence beluga (*Delphinapterus leucas*) projects. The commands are the same across both projects.
