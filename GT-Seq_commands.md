@@ -3,12 +3,12 @@
 ## First Look
 Sequences will come back from the sequencing facility with the results for each sample located in a different directory, named based on the sample names. In addition to the actual sequences, McGill also runs **fastqc** (Andrews 2010) on the files, and provides the resulting files.
 
-Each of these directories will contain **10 files**:   
-    1-2. The `fastq.gz` files for the two index reads (one for each direction of the paired-end reads, "I1" and "I2").
-    3-4. The `fastq.gz` files for the forward and reverse reads for that sample ("R1" and "R2").
-    5-6. The `.md5` files for the forward and reverse reads, for ensuring that transfered files are correct.
-    7-8. The **fastqc** files for the reads of the two indices.
-    9-10. The **fastqc** files for the forward and reverse reads. 
+Each of these directories will contain **10 files**:     
+    1-2. The `fastq.gz` files for the two index reads (one for each direction of the paired-end reads, "I1" and "I2").     
+    3-4. The `fastq.gz` files for the forward and reverse reads for that sample ("R1" and "R2").     
+    5-6. The `.md5` files for the forward and reverse reads, for ensuring that transfered files are correct.     
+    7-8. The **fastqc** files for the reads of the two indices.     
+    9-10. The **fastqc** files for the forward and reverse reads.      
 
 The **fastqc** files can be looked at independently, and provide a range of information on the quality of the reads for each sample. However, we don't want to click on a different file for each sample, so we will use available tools (the program **multiqc** (Ewels et al. 2016)) to summarize the information across all samples. 
 
