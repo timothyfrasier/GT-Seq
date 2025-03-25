@@ -28,17 +28,17 @@ Make note of any samples for which it looks like there were sequencing issues, s
 
 
 ## Preparing Samples for Genotyping
-There are a few things that we need to do next, that we can luckily all do at the same time using the programm **fastp** (Chen et al. 2018). Below are some of the arguments that we will use, and an explanation of what they do.     
-     * `-merge`: for paired-end input, merge each pair of reads into a single read if they are overlapped.     
-     * `-merged_out`: specifies a file in which to store the merged reads.     
-     * `-out1` `-out2`: Reads that can't be successfully merged, but which pass all filters.     
-     * `-dont_eval_duplication`: We expect a lot of duplicates because these are amplicons, so we will disable evaluation of duplicates.     
-     * `-detect_adapter_for_pe`: The adapter sequence auto-detection is enabled for single-end data only. Turn on this option to enable it for paired-end data.     
-     * `average_qual 30`: Set the quality score threshold for reads. If read's average quality score is less than 30, read will be discarded.     
-     * `thread 2`: Use 2 threads (default is 3)
-     * `-correction`: Enable base correction in overlapped regions (only for paired-end data), default is disabled.     
-     * `-trim_poly_x`: Enable polyX trimming in 3' ends. This setting is useful for trimming the tails that have poliX (e.g., polyA).     
-     * `-tirm_poly_g`: Force polyG tail trimming. By default trimming is automatically enabled for Illumina NextSeq/NovaSeq data.     
+There are a few things that we need to do next, that we can luckily all do at the same time using the program **fastp** (Chen et al. 2018). Below are some of the arguments that we will use, and an explanation of what they do.     
+     - `-merge`: for paired-end input, merge each pair of reads into a single read if they are overlapped.     
+     - `-merged_out`: specifies a file in which to store the merged reads.     
+     - `-out1` `-out2`: Reads that can't be successfully merged, but which pass all filters.     
+     - `-dont_eval_duplication`: We expect a lot of duplicates because these are amplicons, so we will disable evaluation of duplicates.     
+     - `-detect_adapter_for_pe`: The adapter sequence auto-detection is enabled for single-end data only. Turn on this option to enable it for paired-end data.     
+     - `average_qual 30`: Set the quality score threshold for reads. If read's average quality score is less than 30, read will be discarded.     
+     - `thread 2`: Use 2 threads (default is 3)
+     - `-correction`: Enable base correction in overlapped regions (only for paired-end data), default is disabled.     
+     - `-trim_poly_x`: Enable polyX trimming in 3' ends. This setting is useful for trimming the tails that have poliX (e.g., polyA).     
+     - `-trim_poly_g`: Force polyG tail trimming. By default trimming is automatically enabled for Illumina NextSeq/NovaSeq data.     
 
 
    
